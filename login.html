@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheapBuilds || Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/login.js" defer></script> <!-- defer: loads after html is done loading-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="homePageHeader">CheapBuilds</a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Login/Account</a></li>
+            </ul>
+        </nav>
+
+        <form action="#" method="GET">
+            <label for="product-search"></label>
+            <input type="search" id="product-search" name="q" placeholder="Search the products">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="cart-wrapper">
+            <a href="./cart.html"><i class="fas fa-cart-shopping fa-2x"></i></a>
+            <span id="cart-count">0</span> <!-- dynamically changes with JS -->
+            
+        </div>
+
+        <a href="./login.html" > <!-- the fa-2x changes the icon size, feature from font awesome-->
+            <a href=""><i class="fa-solid fa-user fa-2x"></i></a>
+        </a>
+    </header>
+
+
+    <main>
+        <section class="login">
+            <h1> Log in </h1>
+            <form method="GET" action="">
+		<fieldset>
+			<legend>Login:</legend>
+			<label for="user">Email:</label>
+			<input type="email" id="user" name="user" value="user@gmail"><br><br>
+
+			<label for="pass">Password:</label>
+			<input type="password" id="pass" name="pass" value="12345"><br><br>
+			
+			<input type="button" value="Login" onclick="logUser();">
+		</fieldset>		
+		</form>
+            <button>Register</button>
+        </section>
+
+    
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3> Categories </h3>
+                <ul>
+                    <li><a href="./products.html">PreBuilt Gaming PCs</a></li>
+                    <li><a href="./products.html">Gaming Laptops</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3> Contact us </h3>
+                <p>support@cheapbuilds.com</p>
+                <p>123-123-1234</p>
+                <p>321 Rue Cheap, Montreal, QC</p>
+            </div>  
+            
+            <div class="footer-col">
+                <h3> Newsletter and Socials </h3>
+                <div class="newsletter-social">
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+
+                    <div class="socials">
+                        <div class="socials">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-x-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
