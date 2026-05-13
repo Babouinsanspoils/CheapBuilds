@@ -6,12 +6,12 @@
     <title>CheapBuilds || Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js" defer></script> <!-- defer: loads after html is done loading-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
     <header>
-        <a href="">CheapBuilds</a>
+        <a href="./index.html" class="homePageHeader">CheapBuilds</a>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -22,24 +22,40 @@
         </nav>
 
         <form action="#" method="GET">
-            <label for="product-search">Search the products</label>
+            <label for="product-search"></label>
             <input type="search" id="product-search" name="q" placeholder="Search the products">
             <button type="submit">Search</button>
         </form>
 
-        <a href="./cart.html">
-            <img src="./images/main/cartIcon.png" alt="Cart">
+        <div class="cart-wrapper">
+            <a href="./cart.html">
+                <img src="./images/main/cartIcon.png" class="cartImage" alt="Cart">
+            </a>
             <span id="cart-count">0</span> <!-- dynamically changes with JS -->
-        </a>
+            
+        </div>
 
-        <a href="./login.html">
-            <img src="" alt="Home">
+        <a href="./login.html" >
+            <img src="" alt="Account">
         </a>
     </header>
 
-    <main>
 
+
+
+
+    <main>
+        <section class="hero">
+            <h1> PCs that are cheaper than RAM prices </h1>
+            <p>Here at CheapBuilds, we offer the cheapest gaming computers and laptops, optimized to suit 
+                your gaming needs!
+            </p>
+            <a href="">Shop Now</a>
+        </section>
     </main>
+
+
+
 
     <footer>
         <div class="footer-container">
@@ -61,17 +77,20 @@
             
             <div class="footer-col">
                 <h3> Newsletter and Socials </h3>
-                <input type="email" placeholder="Enter your email">
-                <button>Subscribe</button>
-                <a href=""> <!-- FB -->
-                    <img src="./images/main/cartIcon.png" alt="Cart">
-                </a>
-                <a href=""> <!-- TWITTER -->
-                    <img src="./images/main/cartIcon.png" alt="Cart">
-                </a>
-                <a href=""> <!-- INSTA -->
-                    <img src="./images/main/cartIcon.png" alt="Cart">
-                </a>
+                <div class="newsletter-social">
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+
+                    <div class="socials">
+                        <div class="socials">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-x-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
